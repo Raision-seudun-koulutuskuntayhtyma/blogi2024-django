@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 
 class Postaus(models.Model):
@@ -13,6 +14,10 @@ class Postaus(models.Model):
     luotu = models.DateTimeField(auto_now_add=True)
     viimeksi_muokattu = models.DateTimeField(auto_now=True)
     julkaisuaika = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        verbose_name = _("postaus")
+        verbose_name_plural = _("postaukset")
 
     def __str__(self):
         pvm_muoto = "%-d.%-m.%Y"
