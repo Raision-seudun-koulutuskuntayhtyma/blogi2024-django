@@ -1,4 +1,5 @@
-# blogi2024-django
+# Blogi2024/Django
+
 Blogiesimerkki Djangolla koodattuna
 
 ## Django-projektin aloittaminen
