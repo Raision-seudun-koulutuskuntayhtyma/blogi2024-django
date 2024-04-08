@@ -2,7 +2,18 @@
 
 Blogiesimerkki Djangolla koodattuna
 
-## Django-projektin aloittaminen
+## Asentaminen
+
+Voit asentaa tämän projektin omalle koneellesi tekemällä seuraavat
+asiat:
+
+1. Kloonaa tämä repository koneellesi
+2. Luo virtuaaliympäristö: `python -m venv venv`
+3. Aktivoi virtuaaliympäristö
+4. Asenna requirementit venviin: `pip install -r requirements.txt`
+5. Voit haluta asentaa myös `requirements-dev.txt`:n jos teet kehitystä.
+
+## Uuden Django-projektin aloittaminen
 
 1. Tee repository GitHubiin
 
