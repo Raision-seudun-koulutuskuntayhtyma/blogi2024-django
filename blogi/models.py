@@ -13,3 +13,8 @@ class Postaus(models.Model):
     luotu = models.DateTimeField(auto_now_add=True)
     viimeksi_muokattu = models.DateTimeField(auto_now=True)
     julkaisuaika = models.DateTimeField(null=True, blank=True)
+
+    def __str__(self):
+        pvm_muoto = "%-d.%-m.%Y"
+        kirjoittaja = self.kirjoittaja.get_full_name()
+        return f"{self.otsikko} ({kirjoittaja} {self.luotu:{pvm_muoto}})"
