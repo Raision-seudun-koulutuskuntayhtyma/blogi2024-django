@@ -1,9 +1,11 @@
 {% extends 'blogi/base.html' %}
 
+{% load markdown_extras %}
+
 {% block otsikko %}
 {{postaus.otsikko}}
 {% endblock %}
 
 {% block sisältö %}
-{{postaus.teksti}}
+{{postaus.teksti | markdown | safe}}
 {% endblock %}
