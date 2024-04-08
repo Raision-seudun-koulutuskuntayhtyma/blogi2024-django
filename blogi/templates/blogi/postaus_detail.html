@@ -1,5 +1,9 @@
-<h1>{{postaus.otsikko}}</h1>
+{% extends 'blogi/base.html' %}
 
-<p>
+{% block otsikko %}
+{{postaus.otsikko}}
+{% endblock %}
+
+{% block sisältö %}
 {{postaus.teksti}}
-</p>
+{% endblock %}
